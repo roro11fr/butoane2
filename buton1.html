@@ -1,38 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-
-<button type="button" onclick="myFunction1(this)" id="1">Button1</button>
-<button type="button" onclick="myFunction2(this)" id="2">Button2</button>
-<button type="button" onclick="myFunction3(this)" id="3">Button3</button>
-
+<button type="button" onclick="myFunction(this)" id="1">Button1</button>
+<button type="button" onclick="myFunction(this)" id="2">Button2</button>
+<button type="button" onclick="myFunction(this)" id="3">Button3</button>
 <p id="demo"></p>
 
-
 <script>
-  var myArray = [ "corect", "gresit", "gresit"];
-
-  function myFunction1(elem) {
-      var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-      var ArrayIndex = myArray.indexOf(randomItem);
-      myArray.splice(ArrayIndex, 1);
-      document.getElementById("demo").innerHTML = randomItem;
-  }
-  function myFunction2(elem) {
-      var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-      var ArrayIndex = myArray.indexOf(randomItem);
-      myArray.splice(ArrayIndex, 1);
-      document.getElementById("demo").innerHTML = randomItem;
-  }
-  function myFunction3(elem) {
-      var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-      var ArrayIndex = myArray.indexOf(randomItem);
-      myArray.splice(ArrayIndex, 1);
-      document.getElementById("demo").innerHTML = randomItem ;
-  } 
-
- </script>
- 
+	var myArray = [ "corect", "gresit", "gresit"];
+	function myFunction(elem) {
+    	var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+    	var ArrayIndex = myArray.indexOf(randomItem);
+    	myArray.splice(ArrayIndex, 1);
+    	document.getElementById("demo").innerHTML = randomItem;
+}
+ </script> 
 </body>
 </html>
